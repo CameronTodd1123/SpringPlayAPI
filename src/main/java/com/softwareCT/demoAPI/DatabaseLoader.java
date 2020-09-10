@@ -33,6 +33,7 @@ public class DatabaseLoader implements CommandLineRunner {
         log.info("Preloading " + this.employeeRepository.save(new Employee("Cam", "Todd", "developer")));
 
         log.info("Preloading " + this.orderRepository.save(new Order("test description", Status.IN_PROGRESS)));
+        log.info("Preloading " + this.orderRepository.save(new Order("test2 description", Status.CANCELLED)));
 
     }
 
